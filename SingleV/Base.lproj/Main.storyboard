@@ -17,89 +17,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GO-oQ-GzS">
-                                <rect key="frame" x="207" y="270" width="185" height="60"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="New Color"/>
-                                <connections>
-                                    <action selector="changeColor" destination="BYZ-38-t0r" eventType="touchUpInside" id="nBo-at-I5C"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1gg-pX-rAW">
-                                <rect key="frame" x="246.5" y="360" width="106" height="115"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="NuL-uP-RCx">
+                                <rect key="frame" x="188" y="217" width="225" height="166"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Hq2-eQ-jcZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="71" height="115"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dw-7v-TAH" userLabel="redLabel">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="29"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Me-UR-4sB" userLabel="greenLabel">
-                                                <rect key="frame" x="0.0" y="43" width="71" height="29"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9t-Vz-0NF" userLabel="blueLabel">
-                                                <rect key="frame" x="0.0" y="86" width="71" height="29"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#Colorizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPg-90-GMu">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="60"/>
                                         <animations/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="VQ0-mr-bgE">
-                                        <rect key="frame" x="91" y="0.0" width="15" height="115"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pL-WH-gH5" userLabel="redValueLabel">
-                                                <rect key="frame" x="0.0" y="0.0" width="15" height="29"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9V-KB-Li0" userLabel="greenValueLabel">
-                                                <rect key="frame" x="0.0" y="43" width="15" height="29"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suQ-oU-5ny" userLabel="blueValueLabel">
-                                                <rect key="frame" x="0.0" y="86" width="15" height="29"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GO-oQ-GzS" customClass="CLRButton">
+                                        <rect key="frame" x="40" y="120" width="144" height="46"/>
                                         <animations/>
-                                    </stackView>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <state key="normal" title="Copy Color">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="exportColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7a-22-MzW"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHAKE or TAP to change the color!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3A-wF-eiW">
+                                <rect key="frame" x="166" y="550" width="267" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="7GO-oQ-GzS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2PR-QI-P3u"/>
-                            <constraint firstItem="1gg-pX-rAW" firstAttribute="top" secondItem="7GO-oQ-GzS" secondAttribute="bottom" constant="30" id="IXy-pu-7Ie"/>
-                            <constraint firstItem="7GO-oQ-GzS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qv7-HJ-mge"/>
-                            <constraint firstItem="1gg-pX-rAW" firstAttribute="centerX" secondItem="7GO-oQ-GzS" secondAttribute="centerX" id="TCt-xh-HS4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e3A-wF-eiW" secondAttribute="bottom" constant="30" id="7wj-HG-wfC"/>
+                            <constraint firstItem="NuL-uP-RCx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Smv-qG-QUj"/>
+                            <constraint firstItem="NuL-uP-RCx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="asM-mX-Apq"/>
+                            <constraint firstItem="e3A-wF-eiW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eG5-dp-aFh"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueLabel" destination="suQ-oU-5ny" id="hf1-w4-E1N"/>
-                        <outlet property="greenLabel" destination="I9V-KB-Li0" id="dP1-D1-p7I"/>
-                        <outlet property="redLabel" destination="3pL-WH-gH5" id="9IB-xz-HA3"/>
+                        <outlet property="colorLabel" destination="UPg-90-GMu" id="qxw-Nc-s1G"/>
+                        <outlet property="exportButton" destination="7GO-oQ-GzS" id="cgt-hX-iaV"/>
+                        <outlet property="helpLabel" destination="e3A-wF-eiW" id="8J3-0b-Td5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -13,10 +13,12 @@
 		60BBFF2B1BD9EFB3003AAC59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60BBFF291BD9EFB3003AAC59 /* Main.storyboard */; };
 		60BBFF2D1BD9EFB3003AAC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60BBFF2C1BD9EFB3003AAC59 /* Assets.xcassets */; };
 		60BBFF301BD9EFB3003AAC59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60BBFF2E1BD9EFB3003AAC59 /* LaunchScreen.storyboard */; };
+		60BBFF3B1BDA0C5C003AAC59 /* CLRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BBFF3A1BDA0C5C003AAC59 /* CLRButton.m */; };
+		60BBFF3E1BDA2424003AAC59 /* UIColor+Lightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BBFF3D1BDA2424003AAC59 /* UIColor+Lightness.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		60BBFF1D1BD9EFB3003AAC59 /* SingleV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60BBFF1D1BD9EFB3003AAC59 /* Colorizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60BBFF211BD9EFB3003AAC59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60BBFF231BD9EFB3003AAC59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60BBFF241BD9EFB3003AAC59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,10 @@
 		60BBFF2C1BD9EFB3003AAC59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60BBFF2F1BD9EFB3003AAC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60BBFF311BD9EFB3003AAC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60BBFF391BDA0C5C003AAC59 /* CLRButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRButton.h; sourceTree = "<group>"; };
+		60BBFF3A1BDA0C5C003AAC59 /* CLRButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRButton.m; sourceTree = "<group>"; };
+		60BBFF3C1BDA2424003AAC59 /* UIColor+Lightness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Lightness.h"; sourceTree = "<group>"; };
+		60BBFF3D1BDA2424003AAC59 /* UIColor+Lightness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Lightness.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +56,7 @@
 		60BBFF1E1BD9EFB3003AAC59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				60BBFF1D1BD9EFB3003AAC59 /* SingleV.app */,
+				60BBFF1D1BD9EFB3003AAC59 /* Colorizer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +68,11 @@
 				60BBFF241BD9EFB3003AAC59 /* AppDelegate.m */,
 				60BBFF261BD9EFB3003AAC59 /* ViewController.h */,
 				60BBFF271BD9EFB3003AAC59 /* ViewController.m */,
+				60BBFF3C1BDA2424003AAC59 /* UIColor+Lightness.h */,
+				60BBFF3D1BDA2424003AAC59 /* UIColor+Lightness.m */,
 				60BBFF291BD9EFB3003AAC59 /* Main.storyboard */,
+				60BBFF391BDA0C5C003AAC59 /* CLRButton.h */,
+				60BBFF3A1BDA0C5C003AAC59 /* CLRButton.m */,
 				60BBFF2C1BD9EFB3003AAC59 /* Assets.xcassets */,
 				60BBFF2E1BD9EFB3003AAC59 /* LaunchScreen.storyboard */,
 				60BBFF311BD9EFB3003AAC59 /* Info.plist */,
@@ -82,9 +92,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		60BBFF1C1BD9EFB3003AAC59 /* SingleV */ = {
+		60BBFF1C1BD9EFB3003AAC59 /* Colorizer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60BBFF341BD9EFB3003AAC59 /* Build configuration list for PBXNativeTarget "SingleV" */;
+			buildConfigurationList = 60BBFF341BD9EFB3003AAC59 /* Build configuration list for PBXNativeTarget "Colorizer" */;
 			buildPhases = (
 				60BBFF191BD9EFB3003AAC59 /* Sources */,
 				60BBFF1A1BD9EFB3003AAC59 /* Frameworks */,
@@ -94,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = SingleV;
+			name = Colorizer;
 			productName = SingleV;
-			productReference = 60BBFF1D1BD9EFB3003AAC59 /* SingleV.app */;
+			productReference = 60BBFF1D1BD9EFB3003AAC59 /* Colorizer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				60BBFF1C1BD9EFB3003AAC59 /* SingleV */,
+				60BBFF1C1BD9EFB3003AAC59 /* Colorizer */,
 			);
 		};
 /* End PBXProject section */
@@ -153,6 +163,8 @@
 				60BBFF281BD9EFB3003AAC59 /* ViewController.m in Sources */,
 				60BBFF251BD9EFB3003AAC59 /* AppDelegate.m in Sources */,
 				60BBFF221BD9EFB3003AAC59 /* main.m in Sources */,
+				60BBFF3E1BDA2424003AAC59 /* UIColor+Lightness.m in Sources */,
+				60BBFF3B1BDA0C5C003AAC59 /* CLRButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +278,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SingleV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MatiasFranco.SingleV;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MatiasFranco.colorizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -280,7 +292,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SingleV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MatiasFranco.SingleV;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MatiasFranco.colorizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -298,7 +310,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60BBFF341BD9EFB3003AAC59 /* Build configuration list for PBXNativeTarget "SingleV" */ = {
+		60BBFF341BD9EFB3003AAC59 /* Build configuration list for PBXNativeTarget "Colorizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60BBFF351BD9EFB3003AAC59 /* Debug */,
