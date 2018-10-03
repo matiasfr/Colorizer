@@ -317,6 +317,7 @@
 				60BBFF361BD9EFB3003AAC59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
